@@ -4,24 +4,44 @@ import { IoSearchSharp } from "react-icons/io5";
 import { BsFillBellFill } from "react-icons/bs";
 import { AiFillMessage } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
-import {IoIosArrowDown} from "react-icons/io"
+import { IoIosArrowDown } from "react-icons/io";
 
-const HeaderLayout = () => {
+const HeaderLayout = () => {  
+
+  function hovering (e) {
+    e.target.style.background = 'lightgray';
+    e.target.style.transition = 'all 0.3s ease';
+  }
+
+  function notHovering (e) {
+    e.target.style.background = 'transparent';
+  }
+
   return (
     <div style={_styleHeader.leHeader}>
-      <FaPinterest size={50} color="red" />
+      <FaPinterest size={50} color="red" cursor='pointer' />
+
       <div style={_buscar.barraBuscar} type="input">
-        <IoSearchSharp size={20} color="black" />
-        <pre />
+        <IoSearchSharp size={20} color="black"/>
         Buscar
       </div>
-        <div style={_icons.iconos}>
-          <BsFillBellFill size={25} cursor="pointer" />
-          <AiFillMessage size={25} cursor="pointer" />
-          <CgProfile size={25} cursor="pointer"/>
-          <IoIosArrowDown size={25} cursor="pointer"/>
 
-        </div>
+      <div style={_icons.iconos} onMouseEnter={hovering} onMouseLeave={notHovering}>
+        <BsFillBellFill size={25} /> 
+      </div>
+
+      <div style={_icons.iconos} onMouseEnter={hovering} onMouseLeave={notHovering}>
+        <AiFillMessage size={25} />
+      </div>
+
+      <div style={_icons.iconos} onMouseEnter={hovering} onMouseLeave={notHovering}>
+        <CgProfile size={25} />
+      </div>
+
+      <div style={_icons.iconos} onMouseEnter={hovering} onMouseLeave={notHovering}>
+        <IoIosArrowDown size={25}  />
+      </div>
+
     </div>
   );
 };
@@ -55,14 +75,24 @@ const _buscar = {
 const _icons = {
   iconos: {
     display: "flex",
+    cursor: 'pointer',
     padding: "7px",
+    // backgroundColor: "lightgrey",
+    opacity: "0.6",
     alignItems: "center",
-    justifyContent:"space-between",
+    justifyContent: "center",
+    borderRadius: "50px",
     height: "3.5vh",
-    width: "13vw",
+    width: "2vw",
     color: "#808080",
   },
+
+  iconosHover: {
+    cursor: 'pointer',
+    backgroundColor: 'lightgray'
+  }
 };
+
 
 
 export default HeaderLayout;
