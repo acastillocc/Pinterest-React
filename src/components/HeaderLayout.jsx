@@ -1,7 +1,7 @@
 import React from "react";
 import { FaPinterest } from "react-icons/fa";
 import { IoSearchSharp } from "react-icons/io5";
-import { BsFillBellFill } from "react-icons/bs";
+import { FaBell } from "react-icons/fa";
 import { AiFillMessage } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 import { IoIosArrowDown } from "react-icons/io";
@@ -19,27 +19,35 @@ const HeaderLayout = () => {
 
   return (
     <div style={_styleHeader.leHeader}>
-      <FaPinterest size={50} color="red" cursor='pointer' />
+      <FaPinterest size={40} color="red" cursor='pointer' onMouseEnter/>
+
+      <div className='btn_inicio' type="input">     
+        Inicio
+      </div>
+
+      <div className='btn_hoy' type="input">     
+        Hoy
+      </div>
 
       <div style={_buscar.barraBuscar} type="input">
         <IoSearchSharp size={20} color="black"/>
         Buscar
       </div>
 
-      <div style={_icons.iconos} onMouseEnter={hovering} onMouseLeave={notHovering}>
-        <BsFillBellFill size={25} /> 
+      <div className='iconos'>
+        <FaBell size={25} color='#767676' /> 
       </div>
 
-      <div style={_icons.iconos} onMouseEnter={hovering} onMouseLeave={notHovering}>
-        <AiFillMessage size={25} />
+      <div className='iconos'>
+        <AiFillMessage size={25} color='#767676' />
       </div>
 
-      <div style={_icons.iconos} onMouseEnter={hovering} onMouseLeave={notHovering}>
-        <CgProfile size={25} />
+      <div className='iconos'>
+        <CgProfile size={25} color='#767676' />
       </div>
 
-      <div style={_icons.iconos} onMouseEnter={hovering} onMouseLeave={notHovering}>
-        <IoIosArrowDown size={25}  />
+      <div className='iconos'>
+        <IoIosArrowDown size={25} color='#767676'  />
       </div>
 
     </div>
@@ -50,7 +58,7 @@ const _styleHeader = {
   leHeader: {
     display: "flex",
     padding: "15px",
-    margin: "15px",
+    margin: "20px",
     alignItems: "center",
     backgroundColor: "white",
     boxSizing: "border-box",
@@ -63,36 +71,15 @@ const _buscar = {
     display: "flex",
     borderRadius: "40px",
     padding: "8px",
-    margin: "20px",
+    margin: "10px",
     backgroundColor: "#D2D2D2",
     alignItems: "center",
     height: "3.5vh",
     width: "90%",
+    cursor: 'text',
     opacity: "0.4",
   },
 };
-
-const _icons = {
-  iconos: {
-    display: "flex",
-    cursor: 'pointer',
-    padding: "7px",
-    // backgroundColor: "lightgrey",
-    opacity: "0.6",
-    alignItems: "center",
-    justifyContent: "center",
-    borderRadius: "50px",
-    height: "3.5vh",
-    width: "2vw",
-    color: "#808080",
-  },
-
-  iconosHover: {
-    cursor: 'pointer',
-    backgroundColor: 'lightgray'
-  }
-};
-
 
 
 export default HeaderLayout;
