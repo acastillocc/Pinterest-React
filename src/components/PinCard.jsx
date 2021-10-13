@@ -23,7 +23,7 @@ const PinCard = (props) => {
       onMouseLeave={() => setMostrar(false)}
       onMouseOver={hoveringCard}
       onMouseOut={notHoveringCard}
-    >
+    >    
       {mostrar && <div className="btn_guardar">Guardar</div>}
       {mostrar && (
         <div className="btn_inside">
@@ -58,6 +58,39 @@ const _stylesPinCard = {
     gridRowEnd: "span 45",
     backgroundImage: "url(https://picsum.photos//255/425)",
   },
+
+  btn_guardar: {
+    display: 'flex',
+    float: 'right',
+    margin: '8px',
+    padding: '4px',
+    position: 'relative',
+    backgroundColor: 'red',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: '18px',
+    width: '40%',
+    height: '4vh',
+    color: 'white',
+    fontWeight: 'bold',
+    cursor: 'pointer',
+  },
+
+  btn_inside: {
+    display: 'flex',
+    margin: '7px',
+    backgroundColor: 'white',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: '20px',
+    width: '12%',
+    height: '4vh',
+    color: 'white',
+    fontWeight: 'bold',
+    opacity: '0.8',
+    cursor: 'pointer',
+  },
+
 };
 
 export default PinCard;

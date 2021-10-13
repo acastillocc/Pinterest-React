@@ -44,6 +44,22 @@ const PinterestLayout = () => {
   );
 };
 
+const _stylesLayout = {
+  pin_container: {
+    margin: 0,
+  padding: 0,
+  width: '90vw',
+  backgroundColor: 'white',
+  position: 'absolute',
+  left: '50%',
+  transform: 'translateX(-50%)',
+  display: 'grid',
+  gridTemplateColumns: 'repeat(auto-fill, 275px)',
+  gridAutoRows: '10px',
+  justifyContent: 'center',
+  }
+}
+
 
 
 export default PinterestLayout;

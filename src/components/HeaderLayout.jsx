@@ -39,11 +39,16 @@ const HeaderLayout = () => {
         <IoIosArrowDown size={20} />
       </div>
 
-      <div className="texto_mobile">Para ti</div>
+      <div className="texto_mobile">
+        Para ti
+        <div className="line">
+        </div>
+        </div>
       <div className="texto_mobile">Hoy</div>
       <div className="texto_mobile">Illustration</div>
+      <div className="texto_mobile">Recetas de comida</div>
+      <div className="texto_mobile">Otros</div>
 
-      <div className="texto_mobile">Recetas de</div>
     </div>
   );
 };

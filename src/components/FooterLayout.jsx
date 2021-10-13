@@ -7,7 +7,7 @@ const FooterLayout = () => {
 
   window.onscroll = () => {
     const footer = document.querySelector('.footerMobile');
-    if (window.pageYOffset >=150) {
+    if (window.pageYOffset >=200) {
       footer.classList.add("hide");
     } else {
       footer.classList.remove("hide");

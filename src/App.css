@@ -45,11 +45,12 @@ body {
 }
 
 .pin_container {
-  margin: -9px;
+  margin: 0;
   padding: 0;
   width: 90%;
   background-color: white;
-  position: absolute;
+  position: relative;
+  align-items: flex-end;
   left: 50%;
   transform: translateX(-50%);
   display: grid;
@@ -105,15 +106,12 @@ body {
 
 .btn_inside {
   display: flex;
-  padding: 0px;
   margin: 7px;
-  position: relative;
-  float: right;
   background-color: white;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  width: 14%;
+  width: 12%;
   height: 4vh;
   color: white;
   font-weight: bold;
@@ -242,17 +240,29 @@ body {
   .header {
     font-weight: bolder;
     justify-content: space-between;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
   }
-
+  
   .texto_mobile {
-    display: flex;
+    display: inline-block;
     border-bottom-color: black;
     padding: 5px;
     margin: 3px;
-    overflow: hidden;
+    width: 35vw;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space:nowrap;
     font-size: 16px;
+  }
+
+  .line{
+    display: flex;
+    width: 2%;
+    height: 1%;
+    background: #000;
   }
 
   .iconos,
