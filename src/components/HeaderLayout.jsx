@@ -7,7 +7,7 @@ const HeaderLayout = () => {
   return (
     <div className="header">
       <div className="logo">
-        <FaPinterest size={40} color="red" cursor="pointer" onMouseEnter />
+        <FaPinterest size={25} color="red" cursor="pointer" onMouseEnter />
       </div>
 
       <div className="btn_inicio" type="input">
@@ -36,22 +36,14 @@ const HeaderLayout = () => {
       </div>
 
       <div className="iconos">
-        <IoIosArrowDown size={25} />
+        <IoIosArrowDown size={20} />
       </div>
 
-       <div className="texto_mobile">
-         Para ti
-      </div> 
-      <div className="texto_mobile">
-         Hoy
-      </div> 
-      <div className="texto_mobile">
-         Illustration
-      </div> 
+      <div className="texto_mobile">Para ti</div>
+      <div className="texto_mobile">Hoy</div>
+      <div className="texto_mobile">Illustration</div>
 
-      <div className="texto_mobile">
-         Recetas de 
-      </div> 
+      <div className="texto_mobile">Recetas de</div>
     </div>
   );
 };

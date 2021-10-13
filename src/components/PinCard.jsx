@@ -12,18 +12,17 @@ const PinCard = (props) => {
     //   <CgProfile size={25} />
     // </div>
   }
-  
+
   function notHoveringCard(e) {
     e.target.style.opacity = "1";
-    // e.target.style.transition = "all 0.3s ease";
   }
   return (
     <div
-    style={{ ..._stylesPinCard.pin_card, ..._stylesPinCard[props.size] }}
-    onMouseEnter={() => setMostrar(true)}
-    onMouseLeave={() => setMostrar(false)}
-    onMouseOver={hoveringCard}
-    onMouseOut={notHoveringCard}
+      style={{ ..._stylesPinCard.pin_card, ..._stylesPinCard[props.size] }}
+      onMouseEnter={() => setMostrar(true)}
+      onMouseLeave={() => setMostrar(false)}
+      onMouseOver={hoveringCard}
+      onMouseOut={notHoveringCard}
     >
       {mostrar && <div className="btn_guardar">Guardar</div>}
       {mostrar && (
@@ -42,25 +41,22 @@ const PinCard = (props) => {
 
 const _stylesPinCard = {
   pin_card: {
-    cursor: "zoom-in",
     margin: "15px 10px",
-    width: "13vw",
-    padding: "8px",
+    padding: 0,
     borderRadius: "16px",
-    // backgroundImage: 'url(https://picsum.photos//211/240)',
+    backgroundColor: "red",
   },
-
   small: {
-    gridRowEnd: "span 30",
-    backgroundImage: "url(https://picsum.photos//230/255)",
+    gridRowEnd: "span 26",
+    backgroundImage: "url(https://picsum.photos//255/265)",
   },
   medium: {
-    gridRowEnd: "span 36",
-    backgroundImage: "url(https://picsum.photos//230/312)",
+    gridRowEnd: "span 33",
+    backgroundImage: "url(https://picsum.photos//255/312)",
   },
   large: {
-    gridRowEnd: "span 48",
-    backgroundImage: "url(https://picsum.photos//230/425)",
+    gridRowEnd: "span 45",
+    backgroundImage: "url(https://picsum.photos//255/425)",
   },
 };
 

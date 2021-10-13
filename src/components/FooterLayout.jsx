@@ -21,7 +21,7 @@ const FooterLayout = () => {
         <AiFillHome size={30} />
       </div>
       <div className="iconos_footer">
-        <FaSearch size={30} color="#767676" />
+        <FaSearch size={27} color="#767676" />
       </div>
       <div className="iconos_footer">
         <FaCommentDots size={30} color="#767676" />
