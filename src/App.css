@@ -13,7 +13,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   display: grid;
-  grid-template-columns: repeat(auto-fill, 275px);
+  grid-template-columns: repeat(auto-fill, 220px);
   grid-auto-rows: 10px;
   justify-content: center;
 }
@@ -97,7 +97,7 @@ body {
   justify-content: center;
   border-radius: 50px;
   height: 3.5vh;
-  width: 2.5%;
+  width: 2%;
   cursor: pointer;
 }
 .iconos:hover {
@@ -111,7 +111,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  width: 12%;
+  width: 16%;
   height: 4vh;
   color: white;
   font-weight: bold;
