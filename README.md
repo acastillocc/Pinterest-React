@@ -9,7 +9,7 @@ Es el componente que contiene el diseño como tal del Pinterest, y en donde se u
 
 
 ### **Header Layout**
-Es todo lo que contiene el header, como los iconos, la barra para buscar, y el logo.
+Es todo lo que contiene el header, como los iconos, los botones de 'Inicio' y de 'Hoy', la barra de buscar, y el logo.
 
 
 ### **Pin Card**
@@ -23,6 +23,9 @@ Aquí se encuentra todo lo que contiene el Footer para el responsive de la vista
 ### DISTRIBUCIÓN
 
 Para Desktop, HD, Tablet y Ultra Wide
-[imagen](/Desktop/Desktop.jpg)
 
+![Desktop](https://user-images.githubusercontent.com/79233642/137220479-8bfdd1e0-28a5-41df-91c1-db356c9270ac.JPG)
 
+Para iPhone X
+
+![iphone](https://user-images.githubusercontent.com/79233642/137220605-ab5786a7-06ff-4d8d-92ad-7875f5134dc3.JPG)
