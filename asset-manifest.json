@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Pinterest-React/static/css/main.2e87f015.chunk.css",
+    "main.js": "/Pinterest-React/static/js/main.2f638db9.chunk.js",
+    "main.js.map": "/Pinterest-React/static/js/main.2f638db9.chunk.js.map",
+    "runtime-main.js": "/Pinterest-React/static/js/runtime-main.fd56d50b.js",
+    "runtime-main.js.map": "/Pinterest-React/static/js/runtime-main.fd56d50b.js.map",
+    "static/js/2.c959d034.chunk.js": "/Pinterest-React/static/js/2.c959d034.chunk.js",
+    "static/js/2.c959d034.chunk.js.map": "/Pinterest-React/static/js/2.c959d034.chunk.js.map",
+    "static/js/3.e4602121.chunk.js": "/Pinterest-React/static/js/3.e4602121.chunk.js",
+    "static/js/3.e4602121.chunk.js.map": "/Pinterest-React/static/js/3.e4602121.chunk.js.map",
+    "index.html": "/Pinterest-React/index.html",
+    "static/css/main.2e87f015.chunk.css.map": "/Pinterest-React/static/css/main.2e87f015.chunk.css.map",
+    "static/js/2.c959d034.chunk.js.LICENSE.txt": "/Pinterest-React/static/js/2.c959d034.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fd56d50b.js",
+    "static/js/2.c959d034.chunk.js",
+    "static/css/main.2e87f015.chunk.css",
+    "static/js/main.2f638db9.chunk.js"
+  ]
+}
